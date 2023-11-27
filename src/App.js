@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NavbarComponent from "./components/navbar";
+import FormComponent from "./components/form";
+import NotesComponent from './components/notes';
+import EditNotes from './components/editNotes';
+import { useState } from 'react';
 
 function App() {
+
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <EditNotes />
+      <NavbarComponent />
+      <FormComponent title={title} setTitle={setTitle} description={description} setDescription={setDescription} />
+      <NotesComponent />
+    </>
   );
 }
 
