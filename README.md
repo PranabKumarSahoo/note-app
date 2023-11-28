@@ -3,14 +3,14 @@
 ## Overview
 
 Welcome to **React Note App**! 
-This is a simple note-taking application built with React, Bootstrap, and other modern web development concepts. It allows users to create, edit, and delete notes efficiently.
+This is a simple note-taking application built with React, Bootstrap, and other modern web development concepts. It allows users to create, read, edit, and delete notes efficiently. Basically it's a CRUD Application.
 
 ## Features
 
-- Create, edit, and delete notes
-- Responsive design with Bootstrap for a seamless user experience
-- Leveraging React hooks for state management
-- Efficient use of props for component communication
+- Create, Read, Edit, and Delete Notes.
+- Responsive design with Bootstrap for a seamless user experience.
+- Leveraging React hooks for state management.
+- Efficient use of props for component communication.
 - Uses local storage to persist data between sessions.
 
 ## Demo
